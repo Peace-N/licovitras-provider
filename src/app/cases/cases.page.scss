@@ -1,0 +1,32 @@
+ion-item{
+    --color: #333;
+    --background: #d2e4ff;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    text-align:center;
+    padding:5px;
+}
+
+ion-avatar {
+  --background: #a8a9b0;
+  background: #a8a9b0;
+}
+ion-content {
+  --background: #edf1f7;
+}
+
+p {
+color: #a8a9b0;
+font-size: 13px;
+}
+
+.copyright {
+  margin: 0 auto;
+  text-align: center;
+  color:grey;
+  font-size: 9px;
+}
+
+.primary-grid {
+  background: #fff;
+}

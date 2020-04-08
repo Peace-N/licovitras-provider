@@ -1,0 +1,8 @@
+{
+  "name": "licovitrasProvider",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

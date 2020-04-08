@@ -1,0 +1,45 @@
+ion-item{
+    --color: #ccc;
+    --background: #a0c8ff;
+    margin-bottom: 5px;
+    text-align:center;
+    padding:5px;
+}
+
+ion-col {
+
+  div {
+    background:#a0c8ff;
+    text-align: center;
+    border-radius:7px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px 3px #ccc;
+
+  }
+ 
+}
+ion-content {
+  --background: #ebebeb;
+}
+
+p {
+color: #a8a9b0;
+font-size: 13px;
+}
+
+.copyright {
+  margin: 0 auto;
+  text-align: center;
+  color:grey;
+  font-size: 9px;
+}
+
+.primary-grid {
+  background: #fff;
+}
+
+ion-label {
+  text-align:center;
+  font-size:11px;
+}

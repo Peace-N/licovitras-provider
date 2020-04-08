@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="medium">
+    <ion-title>
+      LICOVITRAS
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-title>
+    Service Provider
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="8" size-xs="12">
+        <h6>COVID-19 Health Care Provider Tasks</h6>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+    <ion-grid class="primary-grid">
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="2" size-lg="3" size-xs="4">
+          <div padding (click)="presentActionSheet()">
+            <ion-item>
+              <img src="assets/outbreak.svg"/>
+            </ion-item>
+            <ion-label>Track Cases</ion-label>
+          </div>
+        </ion-col>
+        <ion-col align-self-center size-md="2" size-lg="3" size-xs="4">
+          <div padding (click)="presentActionSheet()">
+            <ion-item>
+              <img src="assets/stayhome.svg" />
+            </ion-item>
+            <ion-label>New Cases</ion-label>
+          </div>
+        </ion-col>
+        <ion-col align-self-center size-md="2" size-lg="3" size-xs="4">
+          <div padding (click)="presentActionSheet()">
+            <ion-item>
+              <img src="assets/quarantine.svg" />
+            </ion-item>
+            <ion-label>Schedule</ion-label>
+          </div>
+        </ion-col>
+        <ion-col align-self-center size-md="2" size-lg="3" size-xs="4">
+          <div padding (click)="presentActionSheet()">
+            <ion-item>
+              <img src="assets/medical-mask.svg" />
+            </ion-item>
+            <ion-label>Positive Cases</ion-label>
+          </div>
+        </ion-col>
+        <ion-col align-self-center size-md="2" size-lg="3" size-xs="4">
+          <div padding (click)="presentActionSheet()">
+            <ion-item>
+              <img src="assets/infection.svg" />
+            </ion-item>
+            <ion-label>Cases Network</ion-label>
+          </div>
+        </ion-col>
+        <ion-col align-self-center size-md="2" size-lg="3" size-xs="4">
+          <div padding (click)="presentActionSheet()">
+            <ion-item>
+              <img src="assets/infection.svg" />
+            </ion-item>
+            <ion-label>Resolved Cases</ion-label>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="8" size-xs="12">
+          <p>It is our duty and mandate to provide care and assistance, to track and identify COVID-19 affected individuals, to protect those not affected. Together we will and we can save our people.</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar text-center>
+      <p class="copyright">Licovitras 2020 . All rights are reserved. We can and we will end the pandemic.</p>
+  </ion-toolbar>
+</ion-footer>

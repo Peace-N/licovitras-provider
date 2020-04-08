@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="medium">
+    <ion-title>
+      LICOVITRAS
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <ion-button (click)="refreshData()" size="small" color="secondary">
+        Refresh Data
+        <ion-icon slot="start" name="refresh-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="8" size-xs="12">
+        <h4>COVID-19 Pre Screened Patients in <strong>{{province}}</strong> : Open Cases</h4>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list>
+    <ion-item *ngFor="let case of activeCases; let i = index" color="light" (click)="navigateToMap()">
+      <ion-grid>
+        <ion-row color="light">
+          <!-- <ion-col align-self-center size-md="4" size-lg="4" size-xs="2">
+            <ion-avatar slot="start"><img class="flag" src="assets/outbreak.svg" /></ion-avatar>
+          </ion-col> -->
+          <ion-col size-md="6" size-lg="6" size-xs="6" text-align="left">
+            <ion-label>
+              <h4><strong>{{case.name}} | {{case.surname}}</strong></h4>
+              <p><strong>{{province}}</strong></p>
+              <ion-badge color="danger">Status: Case Active</ion-badge>
+            </ion-label>
+          </ion-col>
+          <ion-col align-self-center size-md="6" size-lg="4" size-xs="6">
+            <ion-button size="small" color="success"><ion-icon name="call-outline"></ion-icon></ion-button>
+            <ion-button size="small" color="primary"><ion-icon name="navigate-circle-outline"></ion-icon></ion-button>
+            <ion-button expand="block" size="small" color="secondary">
+              <ion-label>
+                Close Case
+              </ion-label>
+              
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-item>
+  </ion-list>
+
+    <ion-grid>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="8" size-xs="12">
+          <p>It is our duty and mandate to provide care and assistance, to track and identify COVID-19 affected individuals, to protect those not affected. Together we will and we can save our people.</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar text-center>
+      <p class="copyright">Licovitras 2020 . All rights are reserved. We can and we will end the pandemic.</p>
+  </ion-toolbar>
+</ion-footer>
